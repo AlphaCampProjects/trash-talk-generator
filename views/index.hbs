@@ -1,11 +1,11 @@
 <div class='container row mx-auto'>
-  <h1 class='text-center mt-5'>你想對誰說幹話</h1>
+  <h1 class='text-center mt-4'>你想對誰說幹話？</h1>
 
   {{! select character area}}
-  <form action='/' method='POST'>
+  <form action='/' method='POST' >
     <div
-      class='row mx-auto justify-content-around mt-5 persons'
-      style='width: 80%;'
+      class='row mx-auto justify-content-around mt-2 persons'
+      style='width: 70%;'
     >
       <div class='card col-3 mx-2 engineer'>
         <img
@@ -18,10 +18,13 @@
             <input
               class='form-check-input'
               type='radio'
-              name='flexRadioDefault'
-              id='flexRadioDefault1'
+              name='character'
+              id='engineer'
+              value='engineer'
+              {{#if (eq character 'engineer')}}checked{{/if}}
+              required
             />
-            <label class='form-check-label' for='flexRadioDefault1'>
+            <label class='form-check-label' for='engineer'>
               工程師
             </label>
           </div>
@@ -39,17 +42,20 @@
             <input
               class='form-check-input'
               type='radio'
-              name='flexRadioDefault'
-              id='flexRadioDefault1'
+              name='character'
+              id='designer'
+              value='designer'
+              {{#if (eq character 'designer')}}checked{{/if}}
+              required
             />
-            <label class='form-check-label' for='flexRadioDefault1'>
+            <label class='form-check-label' for='designer'>
               設計師
             </label>
           </div>
         </div>
       </div>
 
-      <div class='card col-3 mx-2 cofunder'>
+      <div class='card col-3 mx-2 entrepreneur'>
         <img
           src='https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg'
           class='card-img-top'
@@ -60,10 +66,13 @@
             <input
               class='form-check-input'
               type='radio'
-              name='flexRadioDefault'
-              id='flexRadioDefault1'
+              name='character'
+              id='entrepreneur'
+              value='entrepreneur'
+              {{#if (eq character 'entrepreneur')}}checked{{/if}}
+              required
             />
-            <label class='form-check-label' for='flexRadioDefault1'>
+            <label class='form-check-label' for='entrepreneur'>
               創業家
             </label>
           </div>
@@ -72,8 +81,8 @@
 
     </div>
     <div
-      class='row submit-area mt-5 mx-auto justify-content-center'
-      style='width: 80%;'
+      class='row submit-area mt-3 mx-auto justify-content-around'
+      style='width: 70%;'
     >
       <button
         type='submit'
@@ -81,10 +90,10 @@
       >產生幹話</button>
 
       <textarea
-        class='show-answer col-7 pl-5'
+        class='show-answer col-9'
         aria-label='With textarea'
         rows='3'
-      ></textarea>
+      >{{#if sentence}} {{sentence}} {{/if}}</textarea>
 
     </div>
   </form>

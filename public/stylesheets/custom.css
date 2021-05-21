@@ -6,7 +6,9 @@
 .card {
   padding: 0;
 }
-
+.card:hover {
+  transform: scale(1.1);
+}
 .persons {
   padding: 0;
 }
@@ -19,7 +21,16 @@
   width: fit-content;
   height: fit-content;
 }
+.submit-area {
+  padding: 0 6px;
+}
 
 textarea {
   border-color: lightgrey;
+}
+
+textarea {
+  padding: 15px;
+  font-weight: bolder;
+  font-size: larger;
 }
