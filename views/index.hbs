@@ -1,1 +1,91 @@
-<h1>can you see</h1>
+<div class='container row mx-auto'>
+  <h1 class='text-center mt-5'>你想對誰說幹話</h1>
+
+  {{! select character area}}
+  <form action='/' method='POST'>
+    <div
+      class='row mx-auto justify-content-around mt-5 persons'
+      style='width: 80%;'
+    >
+      <div class='card col-3 mx-2 engineer'>
+        <img
+          src='https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg'
+          class='card-img-top mp-0'
+          alt='...'
+        />
+        <div class='card-body d-flex justify-content-center'>
+          <div class='form-check'>
+            <input
+              class='form-check-input'
+              type='radio'
+              name='flexRadioDefault'
+              id='flexRadioDefault1'
+            />
+            <label class='form-check-label' for='flexRadioDefault1'>
+              工程師
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class='card col-3 mx-2 designer'>
+        <img
+          src='https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg'
+          class='card-img-top'
+          alt='...'
+        />
+        <div class='card-body d-flex justify-content-center'>
+          <div class='form-check'>
+            <input
+              class='form-check-input'
+              type='radio'
+              name='flexRadioDefault'
+              id='flexRadioDefault1'
+            />
+            <label class='form-check-label' for='flexRadioDefault1'>
+              設計師
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class='card col-3 mx-2 cofunder'>
+        <img
+          src='https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg'
+          class='card-img-top'
+          alt='...'
+        />
+        <div class='card-body d-flex justify-content-center'>
+          <div class='form-check'>
+            <input
+              class='form-check-input'
+              type='radio'
+              name='flexRadioDefault'
+              id='flexRadioDefault1'
+            />
+            <label class='form-check-label' for='flexRadioDefault1'>
+              創業家
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div
+      class='row submit-area mt-5 mx-auto justify-content-center'
+      style='width: 80%;'
+    >
+      <button
+        type='submit'
+        class='btn btn-primary submit-btn col-1'
+      >產生幹話</button>
+
+      <textarea
+        class='show-answer col-7 pl-5'
+        aria-label='With textarea'
+        rows='3'
+      ></textarea>
+
+    </div>
+  </form>
+</div>

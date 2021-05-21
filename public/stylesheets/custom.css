@@ -1,0 +1,25 @@
+.card-img-top {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card {
+  padding: 0;
+}
+
+.persons {
+  padding: 0;
+}
+
+.submit-btn,
+.show-answer {
+  margin: 20px;
+}
+.submit-btn {
+  width: fit-content;
+  height: fit-content;
+}
+
+textarea {
+  border-color: lightgrey;
+}
