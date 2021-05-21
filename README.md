@@ -2,8 +2,11 @@
 由 Node.js 和 Express 建立的網站，使用者能透過選定的角色讓電腦隨機產出一句話。
 
 ## 專案畫面
-首頁
-產生完成
+### 首頁
+<img width="800" alt="index" src="https://user-images.githubusercontent.com/69742330/119136821-b1629c80-ba72-11eb-8585-141d1f20e753.png">
+
+### 產生完成
+<img width="800" alt="completed" src="https://user-images.githubusercontent.com/69742330/119136837-b7587d80-ba72-11eb-991a-cca714bf3491.png">
 
 ## 產品功能
 1. 使用者可以選擇三種預設角色並產出一段幹話
